@@ -1,0 +1,44 @@
+import java.util.Scanner;
+/* Age Comparison
+    @author Sriman Selvakumaran */
+public class AgeComparison {
+	public static void main(String[], args) {
+Scanner input = Scanner new(System.in);
+System.out.print("Enter year of birth of Person A: ");
+int AYr = input.nextInt();
+System.out.print("Enter month of birth of Person A (as integer): ");
+int AMth = input.nextInt();
+System.out.print("Enter day of birth of Person A: ");
+int Ady = input.nextInt();
+System.out.print("Enter year of birth of Person B: ");
+int BYr = input.nextInt();
+System.out.print("Enter month of birth of Person B (as integer): ");
+int BMth = input.nextInt();
+System.out.print("Enter day of birth of Person B: ");
+int Bdy = input.nextInt();
+if (Ayr == Byr && AMth == BMth && Ady == Bdy) {
+	System.out.print("Person A and Person B have the same age and same birth date.");
+}
+else if (Ayr > Byr) {
+	System.out.print("Person A is older than Person B");
+}
+else if (Ayr < Byr) {
+	System.out.print("Person B is older than Person A");
+}
+else if (AMth > BMth) {
+	System.out.print("Person A is older than Person B");
+}
+else if (AMth < BMth) {
+	System.out.print("Person B is older than Person A");
+}
+else if (ADy > BDy) {
+	System.out.print("Person A is older than Person B");
+}
+else if (ADy < BDy) {
+	System.out.print("Person B is older than Person A");
+}
+else {
+	System.out.print("Something went wrong");
+}
+	}
+}
